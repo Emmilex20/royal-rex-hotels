@@ -1,0 +1,4 @@
+import type {Metadata} from "next";import {Cormorant_Garamond,Manrope} from "next/font/google";import "./globals.css";import Header from "@/components/Header";import Footer from "@/components/Footer";
+const cormorant=Cormorant_Garamond({subsets:["latin"],variable:"--font-cormorant",weight:["400","500","600"]});const manrope=Manrope({subsets:["latin"],variable:"--font-manrope"});
+export const metadata:Metadata={title:{default:"Royal Rex Hotels & Spa | Experience Royalty",template:"%s | Royal Rex"},description:"Elegant stays, dining, wellness, events and memorable experiences in Lagos."};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body className={cormorant.variable+" "+manrope.variable+" font-sans"}><Header/><main>{children}</main><Footer/></body></html>}
