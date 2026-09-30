@@ -217,3 +217,11 @@ body.admin-mode{background:#f2efe8}
  .print-receipt{display:block!important;break-after:page!important;page-break-after:always!important}
  .print-receipt-qr{display:flex!important;break-before:auto!important;page-break-before:auto!important;break-after:auto!important;page-break-after:auto!important}
 }
+
+/* Booking flow spacing after live search */
+.bk-form>.bk-room-head{margin-top:72px}
+.bk-room-list+.bk-room-head{margin-top:88px;padding-top:58px;border-top:1px solid color-mix(in srgb,currentColor 12%,transparent)}
+@media(max-width:760px){
+ .bk-form>.bk-room-head{margin-top:52px}
+ .bk-room-list+.bk-room-head{margin-top:64px;padding-top:42px}
+}
