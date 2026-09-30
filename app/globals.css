@@ -41,3 +41,10 @@
 /* Softer luxury header controls */
 .site-header .theme-toggle,.site-header .menu-button{border-color:rgba(255,255,255,.16);border-radius:999px;background:rgba(255,255,255,.055);box-shadow:inset 0 1px rgba(255,255,255,.08),0 8px 24px rgba(0,0,0,.08);backdrop-filter:blur(10px);transition:transform .28s,background .28s,border-color .28s,box-shadow .28s}.site-header .theme-toggle:hover,.site-header .menu-button:hover{transform:translateY(-2px);border-color:rgba(216,180,108,.48);background:rgba(189,153,88,.12);box-shadow:0 10px 28px rgba(0,0,0,.16)}.site-header .header-booking{border-radius:999px;background:linear-gradient(135deg,#d1ae6b,#b88c43);box-shadow:0 10px 28px rgba(0,0,0,.14),inset 0 1px rgba(255,255,255,.2)}.site-header .header-booking:hover{transform:translateY(-2px);background:linear-gradient(135deg,#dec080,#c59a50);color:#fff}.nav-dropdown-menu{border-radius:18px;overflow:hidden}.nav-dropdown-menu a{border-radius:10px}.mobile-menu{margin:8px 10px 0;border:1px solid var(--line);border-radius:22px;box-shadow:0 22px 55px rgba(0,0,0,.2);overflow:hidden}.mobile-menu>a:not(.btn-gold){padding-left:20px;padding-right:20px}.mobile-menu .btn-gold{margin:18px;border-radius:999px;width:calc(100% - 36px)}
 @media(max-width:640px){.site-header .theme-toggle,.site-header .menu-button{border-radius:999px}.site-header .header-booking{border-radius:999px}}
+
+/* Mobile menu viewport scrolling fix */
+@media(max-width:1279px){
+ .mobile-menu{max-height:calc(100dvh - 80px - env(safe-area-inset-bottom));overflow-y:auto!important;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:rgba(189,153,88,.55) transparent;padding-bottom:calc(110px + env(safe-area-inset-bottom))!important}
+ .mobile-menu::-webkit-scrollbar{width:4px}.mobile-menu::-webkit-scrollbar-track{background:transparent}.mobile-menu::-webkit-scrollbar-thumb{background:rgba(189,153,88,.55);border-radius:999px}
+ .mobile-menu>a{position:relative}
+}
