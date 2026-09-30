@@ -174,7 +174,7 @@ body.admin-mode{background:#f2efe8}
  body .site-header,body .site-footer,body .mobile-dock,body .whatsapp-float{display:none!important}
  .booking-confirmation{display:block!important;min-height:0!important;padding:0!important;background:#fff!important}
  .confirmation-card{width:100%!important;max-width:none!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;background:#fff!important;box-shadow:none!important}
- .confirmation-card>*:not(.print-receipt){display:none!important}
+ .confirmation-card>*:not(.print-receipt):not(.print-receipt-qr){display:none!important}
  .print-receipt{display:block!important;box-sizing:border-box;width:210mm;min-height:297mm;margin:0 auto;padding:18mm 17mm 15mm;background:#fff!important;color:#171714!important;text-align:left!important;font-family:Arial,sans-serif!important}
  .print-receipt header{display:flex;align-items:center;gap:8mm;padding-bottom:8mm;border-bottom:1.5px solid #caa45e}
  .print-receipt header img{display:block!important;width:34mm!important;height:24mm!important;object-fit:contain!important;filter:none!important}
