@@ -188,3 +188,18 @@ body.admin-mode{background:#f2efe8}
  .print-receipt-payment{margin-top:7mm;padding:5mm 6mm;border-left:3px solid #caa45e;background:#f7f7f4!important}.print-receipt-payment b{display:block;color:#222;font-size:10pt}.print-receipt-payment small{display:block;margin-top:2mm;color:#777;font-size:8pt}
  .print-receipt footer{display:flex;justify-content:space-between;gap:12mm;margin-top:18mm;padding-top:6mm;border-top:1px solid #d8c7a7;color:#666}.print-receipt footer div{display:flex;max-width:105mm;flex-direction:column;gap:1.5mm}.print-receipt footer b{color:#9a7639;font-family:Georgia,serif;font-size:11pt}.print-receipt footer span,.print-receipt footer p{margin:0!important;color:#777!important;font-size:7.5pt!important;line-height:1.55!important}.print-receipt footer p{max-width:55mm;text-align:right!important}
 }
+
+/* Receipt page 2 — QR concierge card */
+.print-receipt-qr{display:none}
+@media print{
+ .print-receipt{height:297mm;min-height:297mm;page-break-after:always;break-after:page;overflow:hidden}
+ .print-receipt-qr{display:flex!important;box-sizing:border-box;width:210mm;height:297mm;min-height:297mm;page-break-before:always;break-before:page;page-break-after:avoid;break-after:avoid;overflow:hidden;align-items:center;flex-direction:column;padding:18mm 20mm 14mm;background:radial-gradient(circle at 50% 20%,#252016 0,#0e100e 42%,#070907 100%)!important;color:#fff!important;text-align:center!important;font-family:Arial,sans-serif!important}
+ .print-receipt-qr .qr-brand img{display:block!important;width:42mm!important;height:30mm!important;object-fit:contain!important}
+ .qr-kicker{margin:8mm 0 2mm!important;color:#d7ad5e!important;font-size:8pt!important;font-weight:800!important;letter-spacing:2.4px!important}
+ .print-receipt-qr h2{margin:0!important;color:#fff!important;font-family:Georgia,serif!important;font-size:30pt!important;font-weight:400!important;line-height:.98!important}.print-receipt-qr h2 i{color:#d3a452!important;font-weight:400!important}
+ .qr-copy{max-width:125mm;margin:5mm auto 6mm!important;color:#d1d1cc!important;font-size:10pt!important;line-height:1.6!important}
+ .qr-frame{display:grid;width:61mm;height:61mm;place-items:center;padding:4mm;border:2.5mm solid #d0a449;border-radius:8mm;background:#fff!important;box-shadow:0 5mm 14mm rgba(0,0,0,.35)}.qr-frame img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important}.qr-placeholder{width:100%;height:100%;background:#fff}
+ .print-receipt-qr>strong{margin-top:5mm;color:#d7ad5e!important;font-size:10pt;letter-spacing:2px}.print-receipt-qr>span{margin-top:1mm;color:#eee!important;font-size:7pt;letter-spacing:1.3px}
+ .qr-steps{display:grid!important;width:100%;grid-template-columns:repeat(3,1fr);gap:0;margin-top:8mm;padding:5mm 0;border-top:1px solid #6c552a;border-bottom:1px solid #6c552a}.qr-steps div{padding:0 5mm;border-right:1px solid #3d3526}.qr-steps div:last-child{border:0}.qr-steps b{display:grid;width:8mm;height:8mm;margin:0 auto 2mm;place-items:center;border:1px solid #d0a449;border-radius:50%;color:#d0a449;font-size:7pt}.qr-steps p{margin:0!important;color:#ddd!important;font-size:7.5pt!important;line-height:1.4!important}
+ .qr-closing{margin-top:auto;color:#d0a449!important;font-size:7pt;font-weight:800;letter-spacing:2.5px}.qr-closing small{display:block;margin-top:5mm;color:#fff!important;font-size:7.5pt;font-weight:500;line-height:1.7;letter-spacing:2.2px}
+}
